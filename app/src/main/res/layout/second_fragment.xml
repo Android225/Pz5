@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second_frr"
+    android:layout_width="match_parent"
+    android:background="@color/back_color"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/hospit_img1"
+        android:layout_width="247dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        app:srcCompat="@drawable/hosp" />
+
+    <Button
+        android:id="@+id/contacts_btn_back"
+        style="@style/button_style_one"
+        android:layout_width="178dp"
+        android:layout_height="65dp"
+        android:text="Ещё дальше"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <View
+        style="@style/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telephone_hospital" />
+
+    <View
+        style="@style/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adress_hospital" />
+
+    <View
+        style="@style/line"
+        app:layout_constraintBottom_toTopOf="@+id/telephone_hospital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/line"
+        app:layout_constraintBottom_toTopOf="@+id/adress_hospital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/telephone_hospital"
+        android:layout_width="348dp"
+        android:layout_height="62dp"
+        style="@style/text_size"
+        android:layout_marginTop="248dp"
+        android:text="@string/telephone_hosp"
+        app:layout_constraintBottom_toTopOf="@+id/email_hospital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/email_hospital"
+        style="@style/text_size"
+        android:layout_width="348dp"
+        android:layout_height="62dp"
+        android:text="@string/email_hosp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597" />
+
+    <TextView
+        android:id="@+id/adress_hospital"
+        style="@style/text_size"
+        android:layout_width="348dp"
+        android:layout_height="62dp"
+        android:text="@string/adress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_hospital" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
