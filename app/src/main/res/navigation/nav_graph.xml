@@ -3,11 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainActivity2">
+    app:startDestination="@id/first_frag">
 
-    <activity
-        android:id="@+id/mainActivity2"
-        android:name="com.example.pz5.MainActivity"
-        android:label="first_fragment"
-        tools:layout="@layout/first_fragment" />
+    <fragment
+        android:id="@+id/first_frag"
+        android:name="com.example.pz5.first_frag"
+        android:label="first_frag" >
+        <action
+            android:id="@+id/action_first_frag_to_second_frag"
+            app:destination="@id/second_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/second_frag"
+        android:name="com.example.pz5.second_frag"
+        android:label="second_frag" >
+        <action
+            android:id="@+id/action_second_frag_to_third_frag"
+            app:destination="@id/third_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/third_frag"
+        android:name="com.example.pz5.third_frag"
+        android:label="third_frag" >
+        <action
+            android:id="@+id/action_third_frag_to_first_frag"
+            app:destination="@id/first_frag" />
+    </fragment>
 </navigation>

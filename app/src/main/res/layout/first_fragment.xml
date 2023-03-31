@@ -19,6 +19,15 @@
         app:layout_constraintVertical_bias="0.067"
         app:srcCompat="@drawable/hosp" />
 
+    <EditText
+        android:id="@+id/EditFirst"
+        android:layout_width="251dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/make_an_appointment"
         style="@style/button_style_one"
@@ -31,6 +40,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.675" />
+
+    <TextView
+        android:id="@+id/TextFirst"
+        android:layout_width="144dp"
+        android:layout_height="53dp"
+        android:text="@string/text_to"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

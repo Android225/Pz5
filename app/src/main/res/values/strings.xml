@@ -2,7 +2,7 @@
     <string name="app_name">doctors_appointment_hospital</string>
     <string name="contacts">Контакты</string>
     <string name="make_an_appointment">Записаться на приём</string>
-    <string name="email_hosp">Почта: dom-zdorovya@yandex.ru</string>
+    <string name="email_hosp">Почта: domashnaja_biblioteka@yandex.ru</string>
     <string name="telephone_hosp">Телефон: 8(945)-598-49-00</string>
     <string name="adress">Адрес: г.Москва, ул. Фадеева, 8с3</string>
     <string name="Back">назад</string>
@@ -13,4 +13,5 @@
     <string name="date_and_time_record_conf">--дата и время--</string>
     <string name="adress_record_confirm">--адрес--</string>
     <string name="GetName_data_filling">Введите ФИО</string>
+    <string name="text_to">TextView</string>
 </resources>
